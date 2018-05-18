@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chạy chương trình jquery đầu tiên</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="javascript" src="js/jquery.js"></script>
+    <style>
+        .active{
+            background: blue;
+            height: 30px;
+        }
+    </style>
+    
+    </head>
+
+    <body>
+        <h1>jQuery</h1>
+        <div>
+                <span>Nguyễn Văn Cường</span>
+                <span>Thái Hoàng Chương</span>
+                <span>Dương Triệu vũ</span>
+                <span>Thái Hoàng Chương</span>
+                <span>Dương Triệu vũ</span>
+                <span>Thái Hoàng Chương</span>
+                <span>Dương can</span>
+                <span>Thái Hoàng Chương</span>
+                <span>Dương Triệu vũ</span>
+            </div>
+            <div></div>
+            <div>
+                <p>duycan</p>
+                <span>Dương Triệu vũ</span>
+                <span>Thái Hoàng Chương</span>
+                <span>Dương Triệu vũ</span>
+                <span></span>
+                <span>Dương can</span>
+            </div>
+         
+        <script language="javascript">
+            $('div:empty').addClass('active');
+            $("span:contains('can')").css('color','red');
+            $('div:has(p)').css('color','green')
+            $('span:parent').css('color','yellow');
+            $("span:contains('can')").css('color','red');
+        </script>
+    </body>
+</html>
